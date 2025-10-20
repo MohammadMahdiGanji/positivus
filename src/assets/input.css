@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@import "./font.css";
+
+@theme {
+
+  
+  --color-*: initial;
+
+  --font-light: "light";
+  --font-regular: "regular";
+  --font-medium: "medium";
+  --font-semiBold: "semiBold";
+  --font-bold: "bold";
+
+  --color-primary: #b9ff66;
+  --color-secondary: #191a23;
+  --color-gray: #f3f3f3;
+}
