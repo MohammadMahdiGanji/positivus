@@ -16,7 +16,7 @@ export const MenuToggleProvider = ({
 }: React.PropsWithChildren): React.ReactNode => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  const toggleMenu = () => {
+  const toggleMenu = ():void => {
     setIsOpen((pre) => !pre);
   };
   return (

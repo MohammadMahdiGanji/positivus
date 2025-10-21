@@ -1,5 +1,5 @@
 // import dependency
-import  { type JSX, useContext } from "react";
+import { type JSX, useContext } from "react";
 
 // import icons
 import { AiOutlineBars } from "react-icons/ai";
@@ -10,9 +10,11 @@ import { ContextMenuToggle } from "../../context/menuToggle";
 
 export default function MenuBar(): JSX.Element {
   const { isOpen, toggleMenu } = useContext(ContextMenuToggle);
-  const hendleToggleMenu = () => {
+
+  const hendleToggleMenu = (): void => {
     toggleMenu();
   };
+
   return (
     <span
       className="rotate-180 text-2xl cursor-pointer relative z-10 md:hidden"

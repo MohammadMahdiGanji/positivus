@@ -18,6 +18,22 @@
 }
 
 @layer components {
+  .button-primary {
+    @apply bg-secondary
+         text-white
+           rounded-xl 
+           px-6
+           py-3
+           border-2
+           cursor-pointer
+           text-sm
+           border-secondary
+           md:text-base;
+    @variant hover {
+      @apply bg-white transition-all duration-200 text-secondary;
+    }
+  }
+
   .button-secondary {
     @apply bg-transparent
          text-secondary
