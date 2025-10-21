@@ -2,17 +2,49 @@
 @import "./font.css";
 
 @theme {
-
-  
-  --color-*: initial;
-
+  /* costom font */
   --font-light: "light";
   --font-regular: "regular";
   --font-medium: "medium";
   --font-semiBold: "semiBold";
   --font-bold: "bold";
 
+  /* custom color */
+  --color-*: initial;
   --color-primary: #b9ff66;
   --color-secondary: #191a23;
   --color-gray: #f3f3f3;
+  --color-white: #ffffff;
+}
+
+@layer components {
+  .button-secondary {
+    @apply bg-transparent
+         text-secondary
+           rounded-xl 
+           px-6
+           py-3
+           border-2
+           cursor-pointer
+           text-sm
+           border-secondary
+           md:text-base;
+    @variant hover {
+      @apply bg-secondary transition-all duration-200 text-white;
+    }
+  }
+
+  .menu-item-desktop {
+    @apply cursor-pointer text-sm lg:text-base;
+    @variant after {
+      @apply content-[""] absolute
+        bg-secondary bottom-3 rounded-2xl mx-auto  h-[2px] 
+          left-0 right-0 w-0 transition-all duration-200;
+    }
+    @variant hover {
+      @variant after {
+        @apply w-full;
+      }
+    }
+  }
 }
