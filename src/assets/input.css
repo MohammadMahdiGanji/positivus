@@ -28,9 +28,11 @@
            cursor-pointer
            text-sm
            border-secondary
+           transition-all 
+           duration-200
            md:text-base;
     @variant hover {
-      @apply bg-white transition-all duration-200 text-secondary;
+      @apply bg-white  text-secondary;
     }
   }
 
@@ -44,9 +46,11 @@
            cursor-pointer
            text-sm
            border-secondary
+           transition-all
+           duration-200
            md:text-base;
     @variant hover {
-      @apply bg-secondary transition-all duration-200 text-white;
+      @apply bg-secondary  text-white;
     }
   }
 
