@@ -5,6 +5,8 @@ import { type JSX } from "react";
 import Company from "./compnay/company";
 import Services from "./services";
 import Studies from "./studies";
+import Process from "./process";
+
 
 export default function Main(): JSX.Element {
   return (
@@ -14,6 +16,7 @@ export default function Main(): JSX.Element {
           <Company />
           <Services />
           <Studies />
+          <Process />
         </div>
       </div>
     </main>
