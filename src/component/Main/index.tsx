@@ -6,7 +6,7 @@ import Company from "./compnay/company";
 import Services from "./services";
 import Studies from "./studies";
 import Process from "./process";
-
+import Team from "./Team";
 
 export default function Main(): JSX.Element {
   return (
@@ -17,6 +17,7 @@ export default function Main(): JSX.Element {
           <Services />
           <Studies />
           <Process />
+          <Team />
         </div>
       </div>
     </main>
