@@ -8,6 +8,7 @@ import Studies from "./studies";
 import Process from "./process";
 import Team from "./team";
 import TestiMonials from "./testimonials";
+import Contact from "./contact-us";
 
 export default function Main(): JSX.Element {
   return (
@@ -20,6 +21,7 @@ export default function Main(): JSX.Element {
           <Process />
           <Team />
           <TestiMonials />
+          <Contact />
         </div>
       </div>
     </main>
