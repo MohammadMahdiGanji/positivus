@@ -6,7 +6,8 @@ import Company from "./compnay/company";
 import Services from "./services";
 import Studies from "./studies";
 import Process from "./process";
-import Team from "./Team";
+import Team from "./team";
+import TestiMonials from "./testimonials";
 
 export default function Main(): JSX.Element {
   return (
@@ -18,6 +19,7 @@ export default function Main(): JSX.Element {
           <Studies />
           <Process />
           <Team />
+          <TestiMonials />
         </div>
       </div>
     </main>
