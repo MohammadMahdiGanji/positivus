@@ -5,6 +5,7 @@ import { type JSX } from "react";
 import Header from "../component/header";
 import Landing from "../component/landing";
 import Main from "../component/Main";
+import Footer from "../component/footer";
 
 export default function Home(): JSX.Element {
   return (
@@ -12,6 +13,7 @@ export default function Home(): JSX.Element {
       <Header />
       <Landing />
       <Main />
+      <Footer />
     </>
   );
 }
